@@ -2,6 +2,8 @@ package Lab8;
 
 /**
  * insertTTF extends TwoThreeFourTree to structure the insert, contains, and sorted
+ * @author Sweeney and Silas
+ * @version 20231113
  */
 public class insertTTF<E extends Comparable<E>> extends TwoThreeFourTree<E>{
 
