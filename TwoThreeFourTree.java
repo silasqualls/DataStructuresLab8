@@ -3,12 +3,12 @@ package Lab8;
 public abstract class TwoThreeFourTree<E extends Comparable<E>> {
 
     /** A Node represents a node in a 2-3-4‐tree. */
-    private static class Node<E> {
+    static class Node<E> {
         // Data Fields
         /** The number of data items in this node */
         private int size = 0;
         /** The information */
-        private E[] data;
+        E[] data;
         /** The links to the children. child[i] refers to the subtree of
         children < data[i] for i < size and to the subtree
         of children > data[size‐1] for i == size
@@ -28,7 +28,14 @@ public abstract class TwoThreeFourTree<E extends Comparable<E>> {
     private Node<E> root;
     /** The maximum number of children of a node */
     private int order;
-    
+
+    public Node<E> getRoot(){
+        return root;
+    }
+
+    public void setRoot(Node<E> input){
+      root = input;
+    }
     public TwoThreeFourTree()
     {
         root = null;
